@@ -1,0 +1,84 @@
+@import '../../constant.css';
+
+.board-container{
+    height: 100vh;
+    width: 100vw;
+    display:grid;
+    justify-content: center;
+    place-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.turn-text{
+    color:var(--light-tile);
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.board {
+    display: grid;
+    position: relative;
+    grid-template-columns: calc(.25*var(--tile-size)) calc(8*var(--tile-size));
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(8,var(--tile-size));
+    grid-template-rows: repeat(8,var(--tile-size));
+    width: calc(8*var(--tile-size));
+}
+.tile{
+    position: relative;
+}
+
+.tile.tile-light{
+    background-color: var(--light-tile);
+}
+.tile.tile-dark{
+    background-color: var(--dark-tile);
+}
+
+
+.candidate::after{
+    display: block;
+    position: absolute;
+    content: '';
+    width : calc(.3*var(--tile-size));
+    height : calc(.3*var(--tile-size));
+    background: var(--highlight);
+    border-radius: 50%;
+    left: 35%;
+    top: 35%;
+}
+
+.attack::after{
+    display: block;
+    position: absolute;
+    content: '';
+    border: 4px solid var(--highlight);
+    width : calc(0.9*var(--tile-size));
+    height : calc(0.9*var(--tile-size));
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+}
+
+.tile.check::after{
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: rgb(255, 75, 75);
+    border: 8px solid rgba(255, 0, 0, 0.788);
+    width : calc(0.7*var(--tile-size));
+    height : calc(0.7*var(--tile-size));
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+}

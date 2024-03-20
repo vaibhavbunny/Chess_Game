@@ -1,0 +1,249 @@
+.promotion-container {
+    margin: 0;
+    height: 50%;
+    width: 12.5%;
+    background-color: var(--light-tile);
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.promotion-container.container0w {
+    transform: translate(000%, 000%)
+}
+
+.promotion-container.container1w {
+    transform: translate(100%, 000%)
+}
+
+.promotion-container.container2w {
+    transform: translate(200%, 000%)
+}
+
+.promotion-container.container3w {
+    transform: translate(300%, 000%)
+}
+
+.promotion-container.container4w {
+    transform: translate(400%, 000%)
+}
+
+.promotion-container.container5w {
+    transform: translate(500%, 000%)
+}
+
+.promotion-container.container6w {
+    transform: translate(600%, 000%)
+}
+
+.promotion-container.container7w {
+    transform: translate(700%, 000%)
+}
+
+.promotion-container.container0b {
+    transform: translate(000%, 100%)
+}
+
+.promotion-container.container1b {
+    transform: translate(100%, 100%)
+}
+
+.promotion-container.container2b {
+    transform: translate(200%, 100%)
+}
+
+.promotion-container.container3b {
+    transform: translate(300%, 100%)
+}
+
+.promotion-container.container4b {
+    transform: translate(400%, 100%)
+}
+
+.promotion-container.container5b {
+    transform: translate(500%, 100%)
+}
+
+.promotion-container.container6b {
+    transform: translate(600%, 100%)
+}
+
+.promotion-container.container7b {
+    transform: translate(700%, 100%)
+}
+
+
+
+
+
+/* Example pieceprom stpromyles */
+.pieceprom {
+    width: 100%;
+    height: 25%;
+    background-size: 100%;
+}
+
+.pieceprom:hover {
+    border: solid;
+    border-width: 2px;
+    border-color: var(--dark-tile);
+}
+
+/* Example styles for different pieceprom copromlors */
+/* You may want to define your specific colors */
+
+
+.pieceprom.wrprom {
+    background-image: url('/public/assets/wr.png');
+}
+
+.pieceprom.wbprom {
+    background-image: url('/public/assets/wb.png');
+}
+
+.pieceprom.wnprom {
+    background-image: url('/public/assets/wn.png');
+}
+
+.pieceprom.wqprom {
+    background-image: url('/public/assets/wq.png');
+}
+
+
+.pieceprom.brprom {
+    background-image: url('/public/assets/br.png');
+}
+
+.pieceprom.bbprom {
+    background-image: url('/public/assets/bb.png');
+}
+
+.pieceprom.bnprom {
+    background-image: url('/public/assets/bn.png');
+}
+
+.pieceprom.bqprom {
+    background-image: url('/public/assets/bq.png');
+}
+
+
+/* .gameend-container {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color:var(--light-tile); 
+    position: relative;
+}
+
+.gameend-box {
+    position: relative;
+    margin: 0;
+    height: 37.5%;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    background-color: var(--light-tile);
+}
+
+
+
+;
+
+.image {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-size: 100%;
+}
+
+.draw-image {
+    width: 240px;
+    height: 60px;
+    background-color: blue;
+    margin-top: 20px;
+} 
+*/
+
+
+
+/* Styling for the gameend-container */
+.gameend-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling for the gameend-box */
+.gameend-box {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light-tile);
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+/* Styling for the draw-image */
+.draw-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the win-image and win-imageb */
+.win-imagew, .win-imageb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: 100%;
+    margin: 0 10px;
+}
+
+.win-imagew {
+    background-image: url('/public/assets/wk.png');
+}
+
+
+
+.win-imageb {
+    background-image: url('/public/assets/bk.png');
+}
+
+/* Styling for the buttons */
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+.popUp {
+    right: 0;
+    top: 0;
+    position: absolute;
+    left: calc(.25*var(--tile-size));
+    bottom: calc(.25*var(--tile-size));
+
+}
